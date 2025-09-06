@@ -1,4 +1,5 @@
 # wallet-tracker-extension
+open for eveyone who can help to improve develop and operate!
 Wallet Tracker — Single-File Server (Base, Ethereum, BSC)  A robust, single-file Node.js backend that powers wallet activity alerts across Base, Ethereum (ETH), and BNB Smart Chain (BSC). Built for clarity, anti-spam resilience, and easy community hacking.
 Highlights
 
