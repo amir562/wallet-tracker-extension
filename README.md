@@ -49,7 +49,7 @@ Install & Run
 # in the repo folder (where server.js lives)
 npm install
 npm start
-# default: http://localhost:8787
+# default: http://localhost:****
 
 
 Windows (PowerShell)
@@ -60,7 +60,7 @@ npm start
 node .\server.js
 
 
-If port 8787 is taken:
+If port **** is taken:
 
 # Linux/macOS
 PORT=8888 npm start
@@ -72,7 +72,7 @@ Environment Variables
 All are optional; sensible defaults are provided.
 
 Variable	Default	Description
-PORT	8787	HTTP port.
+PORT	****	HTTP port.
 WATCH_CHAINS	eth,base,bsc	Comma-sep list of chains to enable.
 ETH_RPC	(empty)	Custom Ethereum RPC (overrides fallback list).
 BSC_RPC	(empty)	Custom BSC RPC (overrides fallback list).
@@ -153,17 +153,17 @@ Replace 0xYOUR_ADDRESS with your wallet.
 
 Health
 
-http://localhost:8787/health
+http://localhost:****/health
 
 
 Networks
 
-http://localhost:8787/networks
+http://localhost:****/networks
 
 
 Native transfers (Base)
 
-http://localhost:8787/address/base/0xYOUR_ADDRESS/native?blocks=1200&limit=200
+http://localhost:****/address/base/0xYOUR_ADDRESS/native?blocks=1200&limit=200
 
 
 ERC-20 transfers (ETH, example USDC)
@@ -173,12 +173,12 @@ http://localhost:8787/address/eth/0xYOUR_ADDRESS/erc20?token=0xA0b86991c6218b36c
 
 ERC-20 transfers (BSC, example USDT)
 
-http://localhost:8787/address/bsc/0xYOUR_ADDRESS/erc20?token=0x55d398326f99059fF775485246999027B3197955&limit=200
+http://localhost:****/address/bsc/0xYOUR_ADDRESS/erc20?token=0x55d398326f99059fF775485246999027B3197955&limit=200
 
 
 ERC-20 approvals (ETH, example USDC)
 
-http://localhost:8787/address/eth/0xYOUR_ADDRESS/approvals?token=0xA0b8...6eB48&limit=200
+http://localhost:****/address/eth/0xYOUR_ADDRESS/approvals?token=0xA0b8...6eB48&limit=200
 
 Run in Background
 
@@ -244,7 +244,7 @@ Port already in use (EADDRINUSE)
 Another process is using your port.
 
 # Windows PowerShell
-netstat -ano | findstr :8787
+netstat -ano | findstr :****
 taskkill /PID <PID> /F
 # or just run on a different port:
 $env:PORT=8888; npm start
